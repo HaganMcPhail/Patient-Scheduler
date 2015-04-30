@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>Catapult Health</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <!--[if lt IE 9]>
+        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="content">
+                <div class="container-fluid main-content">
+                    <div class="content">
+                        <div class="row border-bottom new-header">
+                            <div class="header">
+                                <div class="col-xs-4 col-sm-3">
+                                    <img class="logo img-responsive center-block" src="img/logo.png" alt="Catapult Health">
+                                </div>
+                                <div class="col-xs-4 col-sm-6 text-center">
+                                    <h3><span class="appt">Appointment</span> Scheduler</h3>
+                                </div>
+                                <div class="col-xs-4 col-sm-3 text-center vcenter">
+                                    <button type="button" id="language-toggle" class="btn btn-default espanol">Espanol</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+                                <div class="overlay"></div>
+                                <div class="message-box">
+                                    <button type="button" class="close close-mb" aria-label="Close">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                    <h4 class="text-center"></h4>
+                                    <p class="message"></p>
+                                    <p class="prompt"></p>
+                                    <button type="button" class="no">No</button>
+                                    <button type="button" class="yes">Yes</button>
+                                </div>
+                                <ol class="breadcrumb text-center">
+                                  <li class="active">Patient</li>
+                                  <li>Account</a></li>
+                                  <li>Appointment</li>
+                                  <li>Confirmation</li>
+                                </ol>
+                            <!-- template top  -->
+                                <div class="row"><br><br></div>
+                                <div class="row">
+                                    <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-lg-8 col-lg-offset-2 text-left">
+                                        <p>Have you created an account with Catapult Health before?</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-lg-8 col-lg-offset-2 text-left">
+                                        <div class="radio">
+                                          <label><input type="radio" class="account" name="optradio" value="account">Yes, I have an account</label>
+                                        </div>
+                                        <div class="radio">
+                                          <label><input type="radio" class="no-account" name="optradio" value="no account">No, I don't have an account</label>
+                                        </div>
+                                        <div class="radio">
+                                          <label><input type="radio" class="no-account" name="optradio" value="no account">I am not sure if I have an account</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row account no-account"><br></div>
+                                <div class="row account">
+                                    <div class="row">
+                                      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-lg-8 col-lg-offset-2 text-left">
+                                          <h3>Welcome Back!</h3>
+                                          <p>Please login to access your account.</p>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-lg-8 col-lg-offset-2 text-left">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="">Email</label>
+                                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email or Username">
+                                                    <a href="#">Forgot Your Username?</a>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputPassword1">Password</label>
+                                                    <input type="password" class="form-control" id="" placeholder="Password">
+                                                    <a href="#">Forgot Your Password?</a>
+                                                </div>
+                                                <a href="login-success.html" title="">
+                                                    <button type="button" class="btn btn-default center-block">Submit</button>
+                                                </a>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div><!-- account -->
+                                <div class="row no-account">
+                                    <div class="row">
+                                    <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-lg-8 col-lg-offset-2 text-left">
+                                        <form>
+                                            <label>First and Last Name <span class="sub-label">(as they appear on your insurance card)</span></label>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="first-name" placeholder="First Name" >
+                                                <br>
+                                                <input type="text" class="form-control" id="" placeholder="Last Name"  >
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Cell Phone <span class="help help-cellphone" prompt="Would you like to use your cell phone?" alt="Why your Cell Phone?">?</span></label>
+                                                <span class="cell-email">
+                                                    <a href="#" class="cell-phone">no cell phone?</a>
+                                                </span>
+                                                <input type="text" class="form-control" id="" placeholder="Cell Phone" >
+                                            </div>
+                                            <div class="form-group email">
+                                                <label>Email <span class="help help-email" prompt="Would you like to use your email?" alt="Why your Email?">?</span></label>
+                                                <span class="cell-email">
+                                                    <a href="" class="email">no email?</a>
+                                                </span>
+                                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email Address" >
+                                                <br>
+                                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Confirm Email" >
+                                            </div>
+                                            <div class="form-group username">
+                                                <label>Username <span class="help help-email" prompt="Would you like to use your email?" alt="Why your Email?">?</span></label>
+                                                <span class="cell-email">
+                                                    <a href="#" class="email">use your email?</a>
+                                                </span>
+                                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Username" >
+                                                <br>
+                                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Confirm Username" >
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Date of Birth <span class="help help-dob" alt="Why your Date of Birth?">?</span></label>
+                                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="MM/DD/YYYY" >
+                                            </div>
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="terms" name="terms" >I have read and accept Catapult Health's <a href="#" title="terms of use">Terms of Use</a></label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="hippa" name="hippa">I have read and accept Catapult Health's <a href="#" title="hippa authorization">HIPPA Authorization</a>
+                                            </div>                
+                                            <br>
+                                        </form>
+                                        <button class="btn btn-default center-block submit-btn" topage="eligibility-search.html">Submit</button>
+                                    </div>
+                                </div>
+                            <!-- template bottom  -->
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- main-content -->
+            </div><!-- #content -->
+            <div id="footer" class="">
+                <div class="container-fluid footer-inner">
+                    <div class="row">
+                        <div class="col-xs-12 text-center">
+                            <div class="col-xs-4 text-center footer-border"><a href="#">Terms</a></div>
+                            <div class="col-xs-4 text-center footer-border"><a href="#">About</a></div>
+                            <div class="col-xs-4 text-center"><a href="#">Contact</a></div>
+                            <div class="col-xs-12 text-center copyright">Copyright &copy; 2015 - All Rights Reserved</div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- #footer -->
+        </div><!-- #wrapper -->
+        <!-- script references -->
+        <script type="text/javascript">
+        </script>
+    </body>
+</html>

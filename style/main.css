@@ -1,0 +1,47 @@
+@import 'init.css';
+
+header {
+    height: 200px;
+    background-image: url('../img/background.jpg');
+    margin-top: 50px;
+}
+#logo{
+    
+}
+#logo-max{
+    
+}
+img.logo{
+    
+}
+.navbar{
+    margin-bottom: 0px;
+    border-radius: 0px;
+}
+div.menu-item{
+    line-height: 10em;
+}
+div.container-fluid.no-pad{
+    padding: 0 0;
+}
+.menu-item{
+    font-size: 1.6em;
+    text-decoration: none;
+    font-weight: bold;
+    color:#D1D2CF;
+    font-family: Verdana, Geneva, sans-serif;
+    letter-spacing: 2px;
+    text-shadow:3px 3px 5px #343030;
+}
+li a{
+    font-size: 1.5em;
+}
+.photo{
+    border-radius: 50%;
+    margin-top: 25px;
+    height: 150px;
+    box-shadow: 5px 5px 10px #000000;
+}
+.center{
+    text-align: center;
+}
