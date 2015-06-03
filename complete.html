@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <!--[if lt IE 9]>
+        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    </head>
+    <body>
+        <header id="header" class="">
+            <div class="container">
+                <div class="header-wrapper">
+                    <div><img src="img/logo.png" class="logo" alt=""></div>
+                    <div class="portal-text"><div>Appointment Scheduling Portal: Sewell Automotive Companies</div></div>
+                </div>
+                <div class="header-right">
+                    <div class="language-toggle"><a>espa&ntilde;ol</a></div>
+                </div>
+                <div class="portal-text-xs">Appointment Scheduling Portal: Sewell Automotive Companies</div>
+            </div>
+        </header><!-- /header -->
+        <div class="container progressbar">
+            <div class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 progressbar-container">
+                <div class="col-xs-3"><img src="img/green-profile.png" class="" alt=""></div>
+                <div class="col-xs-3"><img src="img/green-appoint.png" class="" alt=""></div>
+                <div class="col-xs-3"><img src="img/green-medical.png" class="" alt=""></div>
+                <div class="col-xs-3"><img src="img/green-complete.png" class="" alt=""></div>
+            </div>
+            <div class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 icon-text-container hidden-xs">
+                <div class="col-xs-3"><div class="green">Sign in or create an account</div></div>
+                <div class="col-xs-3"><div class="green">Select an appointment time</div></div>
+                <div class="col-xs-3"><div class="green">Answer a few medical questions</div></div>
+                <div class="col-xs-3"><div class="green">You're all done. Great Job! </div></div>
+            </div>             
+        </div>
+        <div class="container">
+            <div class="row">
+                <br>
+                <div class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 congrats">
+                    <span style="font-weight:500;font-size:30px;color:#69c029;">Congratulations!</span><span style="font-weight:200;font-size:30px;"> Your appointment has been scheduled and you're on the road to better health.</span>  
+                </div>
+                <br>
+            </div>
+            <div class="row dark-grey">
+                <div class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 apt-reminder">
+                    You will receive an email shortly and appointment reminders on the day before.
+                </div>
+            </div>
+            <div class="row">
+                <br>
+                <div class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 apt-details">
+                    <div class="row">
+                        <br>
+                        <div class="col-xs-12 green">
+                            YOUR APPOINTMENT SUMMARY
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3 detail">
+                            Checkup Type:
+                        </div>
+                        <div class="col-sm-9 detail-response">
+                            Preventive Checkup + Flu
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3 detail">
+                            Date/Time:
+                        </div>
+                        <div class="col-sm-9 detail-response">
+                            December 3, 2014 @ 11:50AM
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3 detail">
+                            Location:
+                        </div>
+                        <div class="col-sm-9 detail-response">
+                            OGB - Southern University Baton Rouge (map)
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3 detail">
+                            Location Details:
+                        </div>
+                        <div class="col-sm-9 detail-response">
+                            Cotillion Ballroom
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 apt-details">
+                    <div class="add-calendar">
+                        Add to my calendar <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    </div>
+                    <div class="logout">
+                        Logout <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 text-left copyright">
+                        &copy; 2015 Catapult Health. All Rights Reserved.
+                    </div>
+                    <div class="col-sm-6 text-right footer-links">
+                        <a href="" title="">Terms</a> | 
+                        <a href="" title="">Privacy</a> | 
+                        <a href="" title="">About</a> | 
+                        <a href="" title="">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- script references -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script type="text/javascript">
+            $('.logo').click(function(){
+                window.location = 'index.html';
+            });
+
+            $('#email').focus();
+
+            $('div.questions .btn').click(function(){
+                $(this).addClass('active focus');
+            });
+        </script>
+    </body>
+</html>

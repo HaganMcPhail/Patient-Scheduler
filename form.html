@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <!--[if lt IE 9]>
+        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <style type="text/css" media="screen">
+            .header-wrapper>div{float:left;}
+        </style>
+    </head>
+    <body>
+        <header id="header" class="">
+            <div class="container">
+                <div class="header-wrapper">
+                    <div><img src="img/logo.png" class="logo" alt=""></div>
+                    <div class="portal-text"><div>Appointment Scheduling Portal</div></div>
+                </div>
+                <div class="header-right">
+                    <div class="language-toggle"><a>espa&ntilde;ol</a></div>
+                    <div class="login">login &#9658;</div>
+                </div>
+            </div>
+        </header><!-- /header -->
+        <div class="company">
+            <div class="container">
+                Sewell Automotive Companies
+            </div>
+        </div><!-- /company -->
+        <div class="container progressbar">
+            <div class="row">
+                <div class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 progressbar-container">
+                    <div class="col-xs-3"><img src="img/green-profile.png" class="" alt=""></div>
+                    <div class="col-xs-3"><img src="img/grey-appoint.png" class="" alt=""></div>
+                    <div class="col-xs-3"><img src="img/grey-medical.png" class="" alt=""></div>
+                    <div class="col-xs-3"><img src="img/grey-complete.png" class="" alt=""></div>
+                </div>
+                <div class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 icon-text-container hidden-xs">
+                    <div class="col-xs-3"><div class="green">Sign in or create an account</div></div>
+                    <div class="col-xs-3"><div class="">Select an appointment time</div></div>
+                    <div class="col-xs-3"><div>Answer a few medical questions</div></div>
+                    <div class="col-xs-3"><div>You're all done. Great Job! </div></div>
+                </div>
+            </div>                
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="content text-center">
+                    <div class="col-xs-12"><h3>Create Your New Account</h3></div>
+                    <div class="form-container col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 text-left">
+                        <form role="form">
+                            <div class="form-group">
+                              <label class="green" for="email">Email:</label>
+                              <input type="email" class="form-control" id="email" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                              <label for="confirm-email">Confirm Email:</label>
+                              <input type="confirm-email" class="form-control" id="confirm-email" placeholder="Confirm email">
+                            </div>
+                            <div class="form-group">
+                              <label for="pwd">Create Password:</label>
+                              <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                            </div>
+                            <div class="form-group">
+                              <label for="confirm-pwd">Confirm Password:</label>
+                              <input type="confirm-password" class="form-control" id="confirm-pwd" placeholder="Confirm password">
+                            </div>
+                            <div class="checkbox">
+                                <label class="checkbox-text">
+                                    <input type="checkbox"> I have read and accept Catapult Health's <span class="form-link">Terms Of Use</span>
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label class="checkbox-text">
+                                    <input type="checkbox"> I have read and accept Catapult Health's <span class="form-link">HIPPA Authorization</span>
+                                </label>
+                            </div>
+                            <div class="create-btn">Create Account <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></div>
+                          </form>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /main-content -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 text-left copyright">
+                        &copy; 2015 Catapult Health. All Rights Reserved.
+                    </div>
+                    <div class="col-sm-6 text-right footer-links">
+                        <a href="" title="">Terms</a> | 
+                        <a href="" title="">Privacy</a> | 
+                        <a href="" title="">About</a> | 
+                        <a href="" title="">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- script references -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script type="text/javascript">
+            $('.logo').click(function(){
+                window.location = 'index.html';
+            });
+
+            $('#email').focus();
+        </script>
+    </body>
+</html>
