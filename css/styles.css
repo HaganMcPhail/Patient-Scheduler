@@ -83,7 +83,13 @@ div.questions .btn.active:focus{background-color: #5e5e5e;color:white;border:2px
 .detail{text-align: right;font-weight: 200;}
 .detail-response{text-align: left;font-weight:500;}
 
-.logout, .add-calendar{float:left;margin: 15px 10px;background-color:#5e5e5e;padding:5px 10px;border-radius: 5px;cursor: pointer;color:#fff;}
+.logout, .add-calendar, .change-appointment{float:left;margin: 15px 10px;background-color:#5e5e5e;padding:5px 10px;border-radius: 5px;cursor: pointer;color:#fff;}
+.add-calendar{float:right;}
+a.edit-appointment{text-decoration: underline;color:#5e5e5e;}
+
+.panel{margin-left: 15px;margin-right: 15px;}
+.panel-heading{font-size: 19px;}
+span.show-search, span.show-manual{text-decoration: underline;cursor: pointer;}
 
 input[type=checkbox]{width: 20px;height: 20px;cursor: pointer;-webkit-appearance: none;appearance: none;border:1px solid #b6b6b6;}
 @media only screen and (max-width : 767px) {
@@ -100,5 +106,6 @@ input[type=checkbox]{width: 20px;height: 20px;cursor: pointer;-webkit-appearance
     .btn:hover{box-sizing:border-box;color:#5e5e5e;background-color:white;border:2px solid #69c029;margin-top:-2px;}
     footer{padding:10px 0;line-height: 22px;}
     .detail{text-align:left;font-weight: 200;}
+    .add-calendar{float:left;}
 }
 

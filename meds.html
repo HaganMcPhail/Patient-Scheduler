@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <!--[if lt IE 9]>
+        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <style type="text/css">
+            .manual-med{
+                
+            }
+            form.med .form-group, .checkbox, .checkbox+.checkbox{
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+            .name{margin-left: 15px;margin-right: 15px;}
+            .hagan, .sanders{display:none;}
+            .continue-btn{margin-bottom:5px;}
+            .apt-details > .row {border-top:1px solid #b6b6b6;border-bottom: none;}
+            .apt-details > .row:first-child {
+                border-top: none;
+            }
+            .glyphicon{cursor: pointer;}
+            .glyphicon-trash:hover{color:red;}
+            .detail-response{padding-top:10px;padding-bottom:90px;}
+        </style>
+    </head>
+    <body>
+        <header id="header" class="">
+            <div class="container">
+                <div class="header-wrapper">
+                    <div><img src="img/logo.png" class="logo" alt=""></div>
+                    <div class="portal-text"><div>Appointment Scheduling Portal</div></div>
+                </div>
+                <div class="header-right">
+                    <div class="language-toggle"><a>espa&ntilde;ol</a></div>
+                    <div class="login">login &#9658;</div>
+                </div>
+            </div>
+        </header><!-- /header -->
+        <div class="company">
+            <div class="container">
+                Sewell Automotive Companies
+            </div>
+        </div><!-- /company -->
+        <div class="container progressbar">
+            <div class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 progressbar-container">
+                <div class="col-xs-3"><img src="img/green-profile.png" class="" alt=""></div>
+                <div class="col-xs-3"><img src="img/green-appoint.png" class="" alt=""></div>
+                <div class="col-xs-3"><img src="img/green-medical.png" class="" alt=""></div>
+                <div class="col-xs-3"><img src="img/green-complete.png" class="" alt=""></div>
+            </div>
+            <div class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 icon-text-container hidden-xs">
+                <div class="col-xs-3"><div class="green">Sign in or create an account</div></div>
+                <div class="col-xs-3"><div class="green">Select an appointment time</div></div>
+                <div class="col-xs-3"><div class="green">Answer a few medical questions</div></div>
+                <div class="col-xs-3"><div class="green">You're all done. Great Job! </div></div>
+            </div>             
+        </div>
+        <div class="container">
+            <div class="row">
+                <br><br>
+                <div class="panel panel-default">
+                    <div class="panel-heading">Medicines</div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <h3><span class="show-search">Enter/Search for Meds</span></h3>
+                            </div>
+                            <div class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 search-med">
+                                <div class="input-group">
+                                    <span class="input-group-btn">
+                                        <button style="height:50px;" class="btn btn-default med-search" type="button">
+                                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                        </button>
+                                    </span>
+                                    <input type="text" class="form-control search" placeholder="Search for...">
+                                </div><!-- /input-group -->
+                            </div>
+                        </div>
+                    </div>
+                </div><br>
+                <div class="panel panel-default">
+                    <div class="panel-heading">Your Med Info</div>
+                    <div class="panel-body">
+                        <div class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 apt-details">
+                            <div class="row hagan">
+                                <div class="col-xs-10">
+                                    <div class="detail-response">
+                                        <div class="col-xs-12">Hydrochlorothiazide</div>
+                                        <div class="col-xs-6">
+                                            <input type="text" class="form-control dosage" placeholder="dosage">
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <input type="text" class="form-control" placeholder="frequency">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-1"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></div>
+                            </div>
+                            <div class="row sanders">
+                                <div class="col-xs-10">
+                                    <div class="detail-response">
+                                        <div class="col-xs-12">Diovan HCT</div>
+                                        <div class="col-xs-6">
+                                            <input type="text" class="form-control dosage" placeholder="dosage">
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <input type="text" class="form-control" placeholder="frequency">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-1"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row"><br><br><br><br></div>
+            <div>
+                <div class="row">
+                    <div class=" text-center">
+                        <a href="hq.html"><div class="previous-btn"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Previous</div></a>
+                        <a href="pcp.html"><div class="continue-btn">Continue <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 text-left copyright">
+                        &copy; 2015 Catapult Health. All Rights Reserved.
+                    </div>
+                    <div class="col-sm-6 text-right footer-links">
+                        <a href="" title="">Terms</a> | 
+                        <a href="" title="">Privacy</a> | 
+                        <a href="" title="">About</a> | 
+                        <a href="" title="">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- script references -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script type="text/javascript">
+            var count = 0;
+            $('.med-search').click(function(){
+                if(count == 0) {
+                    $('.hagan').show();
+                    count++;
+                } else {
+                    $('.sanders').show();
+                    count++;
+                }
+                $('input.dosage:first').focus();
+            });
+
+            $('.search').keypress(function(e){
+                if(e.which == 13){//Enter key pressed
+                    $('.med-search').click();//Trigger search button click event
+                }
+            });
+
+            $('.glyphicon-trash').click(function(){
+                $(this).closest('div').parent('div').hide()
+            });
+
+        </script>
+    </body>
+</html>
